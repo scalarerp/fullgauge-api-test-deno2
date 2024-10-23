@@ -1,7 +1,7 @@
 # Projeto para testar API Sitrad DENO 2.0
 
 
-- **Nome do Projeto**: fullgauge-test-api
+- **Nome do Projeto**: fullgauge-test-api-deno2
 - **Versão**: 0.0.1
 - **Homepage**: [https://scalarerp.github.io/fullgauge-api-test/](https://scalarerp.github.io/fullgauge-api-test/)
 - **Licença**: MIT
