@@ -1,37 +1,53 @@
-name: Deploy
+name: Deploy to GitHub Pages
+
 on:
   push:
-    branches: main
-  pull_request:
-    branches: main
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  deploy:
-    name: Deploy
+  build:
     runs-on: ubuntu-latest
-
-    permissions:
-      id-token: write # Needed for auth with Deno Deploy
-      contents: read # Needed to clone the repository
-
     steps:
-      - name: Clone repository
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Install Deno
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
 
-      - name: Install step
-        run: "deno i"
+      - name: Install dependencies
+        run: deno install
 
-      - name: Build step
-        run: "deno task build"
+      - name: Build project
+        run: deno task build
 
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3
         with:
-          project: "fullgauge-test-api-deno2"
-          entrypoint: "api/main.ts"
-          root: ""
+          name: production-files
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: production-files
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
