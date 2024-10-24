@@ -3,7 +3,7 @@
 
 - **Nome do Projeto**: fullgauge-test-api-deno2
 - **Versão**: 0.0.1
-- **Homepage**: [https://scalarerp.github.io/fullgauge-api-test/](https://scalarerp.github.io/fullgauge-api-test/)
+- **Homepage**: [https://scalarerp.github.io/fullgauge-api-test-deno2/](https://scalarerp.github.io/fullgauge-api-test-deno2/)
 - **Licença**: MIT
 
 Para mais informações sobre como usar ou contribuir para este projeto, por favor, consulte a documentação específica ou entre em contato com os mantenedores.
