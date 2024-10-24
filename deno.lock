@@ -1,20 +1,6 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@oak/commons@1": "1.0.0",
-    "jsr:@oak/oak@*": "17.0.0",
-    "jsr:@oak/oak@17": "17.0.0",
-    "jsr:@std/assert@1": "1.0.6",
-    "jsr:@std/bytes@1": "1.0.2",
-    "jsr:@std/bytes@^1.0.2": "1.0.2",
-    "jsr:@std/crypto@1": "1.0.3",
-    "jsr:@std/encoding@1": "1.0.5",
-    "jsr:@std/encoding@^1.0.5": "1.0.5",
-    "jsr:@std/http@1": "1.0.7",
-    "jsr:@std/io@0.224": "0.224.9",
-    "jsr:@std/media-types@1": "1.0.3",
-    "jsr:@std/path@1": "1.0.6",
-    "jsr:@tajpouria/cors@^1.2.1": "1.2.1",
     "npm:@eslint/js@^9.11.1": "9.13.0",
     "npm:@tanstack/react-query-devtools@^5.59.15": "5.59.16_@tanstack+react-query@5.59.16__react@18.3.1_react@18.3.1",
     "npm:@tanstack/react-query@^5.59.15": "5.59.16_react@18.3.1",
@@ -31,10 +17,8 @@
     "npm:globals@^15.9.0": "15.11.0",
     "npm:lucide-react@0.453": "0.453.0_react@18.3.1",
     "npm:md5@^2.3.0": "2.3.0",
-    "npm:path-to-regexp@6.2.1": "6.2.1",
     "npm:prettier@^3.3.3": "3.3.3",
     "npm:react-dom@^18.3.1": "18.3.1_react@18.3.1",
-    "npm:react-router-dom@^6.26.2": "6.26.2_react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:react@^18.3.1": "18.3.1",
     "npm:sass@^1.80.1": "1.80.4",
     "npm:sonner@^1.5.0": "1.5.0_react@18.3.1_react-dom@18.3.1__react@18.3.1",
@@ -43,66 +27,6 @@
     "npm:usehooks-ts@^3.1.0": "3.1.0_react@18.3.1",
     "npm:vite@^5.4.8": "5.4.10_sass@1.80.4",
     "npm:zustand@5": "5.0.0_@types+react@18.3.9_react@18.3.1"
-  },
-  "jsr": {
-    "@oak/commons@1.0.0": {
-      "integrity": "49805b55603c3627a9d6235c0655aa2b6222d3036b3a13ff0380c16368f607ac",
-      "dependencies": [
-        "jsr:@std/assert",
-        "jsr:@std/bytes@1",
-        "jsr:@std/crypto",
-        "jsr:@std/encoding@1",
-        "jsr:@std/http",
-        "jsr:@std/media-types"
-      ]
-    },
-    "@oak/oak@17.0.0": {
-      "integrity": "1be33e585080d8ce5093963469a05ed265f1d5f139421c9b0fda8419a533ebee",
-      "dependencies": [
-        "jsr:@oak/commons",
-        "jsr:@std/assert",
-        "jsr:@std/bytes@1",
-        "jsr:@std/crypto",
-        "jsr:@std/http",
-        "jsr:@std/io",
-        "jsr:@std/media-types",
-        "jsr:@std/path",
-        "npm:path-to-regexp"
-      ]
-    },
-    "@std/assert@1.0.6": {
-      "integrity": "1904c05806a25d94fe791d6d883b685c9e2dcd60e4f9fc30f4fc5cf010c72207"
-    },
-    "@std/bytes@1.0.2": {
-      "integrity": "fbdee322bbd8c599a6af186a1603b3355e59a5fb1baa139f8f4c3c9a1b3e3d57"
-    },
-    "@std/crypto@1.0.3": {
-      "integrity": "a2a32f51ddef632d299e3879cd027c630dcd4d1d9a5285d6e6788072f4e51e7f"
-    },
-    "@std/encoding@1.0.5": {
-      "integrity": "ecf363d4fc25bd85bd915ff6733a7e79b67e0e7806334af15f4645c569fefc04"
-    },
-    "@std/http@1.0.7": {
-      "integrity": "9b904fc256678a5c9759f1a53a24a3fdcc59d83dc62099bb472683b6f819194c",
-      "dependencies": [
-        "jsr:@std/encoding@^1.0.5"
-      ]
-    },
-    "@std/io@0.224.9": {
-      "integrity": "4414664b6926f665102e73c969cfda06d2c4c59bd5d0c603fd4f1b1c840d6ee3",
-      "dependencies": [
-        "jsr:@std/bytes@^1.0.2"
-      ]
-    },
-    "@std/media-types@1.0.3": {
-      "integrity": "b12d30a7852f7578f4d210622df713bbfd1cbdd9b4ec2eaf5c1845ab70bab159"
-    },
-    "@std/path@1.0.6": {
-      "integrity": "ab2c55f902b380cf28e0eec501b4906e4c1960d13f00e11cfbcd21de15f18fed"
-    },
-    "@tajpouria/cors@1.2.1": {
-      "integrity": "eca42e4fb7cb3906ef0ee3d1e565dd6bb4632ccd8e70a95cf4279759743328f0"
-    }
   },
   "npm": {
     "@ampproject/remapping@2.3.0": {
@@ -492,9 +416,6 @@
     },
     "@popperjs/core@2.11.8": {
       "integrity": "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A=="
-    },
-    "@remix-run/router@1.19.2": {
-      "integrity": "sha512-baiMx18+IMuD1yyvOGaHM9QrVUPGGG0jC+z+IPHnRJWUAUvaKuWKyE8gjDj2rzv3sz9zOGoRSPgeBVHRhZnBlA=="
     },
     "@rollup/rollup-android-arm-eabi@4.24.0": {
       "integrity": "sha512-Q6HJd7Y6xdB48x8ZNVDOqsbh2uByBhgK8PiQgPhwkIw/HC/YX5Ghq2mQY5sRMZWHb3VsFkWooUVOZHKr7DmDIA=="
@@ -1305,9 +1226,6 @@
     "path-key@3.1.1": {
       "integrity": "sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q=="
     },
-    "path-to-regexp@6.2.1": {
-      "integrity": "sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw=="
-    },
     "picocolors@1.1.1": {
       "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="
     },
@@ -1347,22 +1265,6 @@
     },
     "react-refresh@0.14.2": {
       "integrity": "sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA=="
-    },
-    "react-router-dom@6.26.2_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
-      "integrity": "sha512-z7YkaEW0Dy35T3/QKPYB1LjMK2R1fxnHO8kWpUMTBdfVzZrWOiY9a7CtN8HqdWtDUWd5FY6Dl8HFsqVwH4uOtQ==",
-      "dependencies": [
-        "@remix-run/router",
-        "react",
-        "react-dom",
-        "react-router"
-      ]
-    },
-    "react-router@6.26.2_react@18.3.1": {
-      "integrity": "sha512-tvN1iuT03kHgOFnLPfLJ8V95eijteveqdOSk+srqfePtQvqCExB8eHOYnlilbOcyJyKnYkr1vJvf7YqotAJu1A==",
-      "dependencies": [
-        "@remix-run/router",
-        "react"
-      ]
     },
     "react@18.3.1": {
       "integrity": "sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==",
@@ -1550,11 +1452,6 @@
     }
   },
   "workspace": {
-    "dependencies": [
-      "jsr:@oak/oak@17",
-      "jsr:@tajpouria/cors@^1.2.1",
-      "npm:react-router-dom@^6.26.2"
-    ],
     "packageJson": {
       "dependencies": [
         "npm:@eslint/js@^9.11.1",
